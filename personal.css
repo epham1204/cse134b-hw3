@@ -7,6 +7,12 @@ header {
 }
 
 
+body > header > a {
+    font-weight: 700;
+    text-decoration: none;
+    color: inherit;
+}
+
 nav ul {
     display: flex;
     gap: 1.75rem;
