@@ -6,13 +6,19 @@ header {
     border-bottom: 2px solid forestgreen;
 }
 
+nav ul {
+    display: flex;
+    gap: 1.75 rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 footer {
 
 }
 
-nav a {
 
-}
 
 h1, h2, h3 {
 
