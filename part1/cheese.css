@@ -34,6 +34,12 @@ blockquote {
 
 a:hover {
     color: limegreen;
+    outline: 2px solid darkgray;
+}
+
+visilbe:focus{
+    color: limegreen;
+    outline: 2px solid darkgray;
 }
 
 a:focus {
