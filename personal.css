@@ -7,7 +7,7 @@ header {
 }
 
 
-body > header > a {
+header ul {
     font-weight: 700;
     text-decoration: none;
     color: inherit;
