@@ -37,5 +37,16 @@ a:hover {
 }
 
 a:focus {
-    color: orangel
+    outline: 3px solid orange;
+    background-color: antiquewhite;
+}
+
+input:focus {
+    outline: 3px solid orange;
+    background-color: antiquewhite;
+}
+
+button:focus {
+    outline: 3px solid orange;
+    background-color: antiquewhite;
 }
