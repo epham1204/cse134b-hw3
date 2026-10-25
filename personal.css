@@ -6,11 +6,6 @@ header {
     border-bottom: 2px solid forestgreen;
 }
 
-body > header > a {
-    font-weight: 700;
-    text-decoration: none;
-    color: inherit;
-}
 
 nav ul {
     display: flex;
