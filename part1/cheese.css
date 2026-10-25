@@ -41,3 +41,17 @@ a:focus, input:focus, button:focus {
     outline: 3px solid orange;
     background-color: antiquewhite;
 }
+
+header {
+    color: red;
+}
+
+header {
+    color: orange;
+}
+
+/* The reason the later value wins is because CSS reads from top to bottom.
+    Therefore when it sees the later selector setting the value to something
+    different, it overwrites the previous value. Similar to how if you set x = 5
+    earlier in a program and then set it later x = 2, then the value of x is
+    overwritten to be 2.*/
