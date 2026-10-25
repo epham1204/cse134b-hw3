@@ -6,6 +6,12 @@ header {
     border-bottom: 2px solid forestgreen;
 }
 
+body > header > a {
+    font-weight: 700;
+    text-decoration: none;
+    color: inherit;
+}
+
 nav ul {
     display: flex;
     gap: 1.75rem;
@@ -14,10 +20,22 @@ nav ul {
     padding: 0;
 }
 
-footer {
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-bottom: 2px solid forestgreen;
 }
 
+footer ul {
+    display: flex;
+    gap: 1.75rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
 
 h1, h2, h3 {
