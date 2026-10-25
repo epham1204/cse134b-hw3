@@ -1,6 +1,6 @@
 /* Ethan Pham https://github.com/epham1204/cse134b-hw3 */
 
-/* body {
+body {
     font-family: "Times New Roman", serif;
     color: #16693b;
     line-height: 1.5;
@@ -48,7 +48,7 @@ header {
 
 header {
     color: orange;
-} */
+}
 
 /* The reason the later value wins is because CSS reads from top to bottom.
     Therefore when it sees the later selector setting the value to something
