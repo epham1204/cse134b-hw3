@@ -37,22 +37,7 @@ a:hover {
     outline: 2px solid darkgray;
 }
 
-visilbe:focus{
-    color: limegreen;
-    outline: 2px solid darkgray;
-}
-
-a:focus {
-    outline: 3px solid orange;
-    background-color: antiquewhite;
-}
-
-input:focus {
-    outline: 3px solid orange;
-    background-color: antiquewhite;
-}
-
-button:focus {
+a:focus, input:focus, button:focus {
     outline: 3px solid orange;
     background-color: antiquewhite;
 }
