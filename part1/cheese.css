@@ -1,0 +1,33 @@
+/* Ethan Pham https://github.com/epham1204/cse134b-hw3 */
+
+body {
+    font-family: "Times New Roman", serif;
+    color: #16693b;
+    line-height: 1.5;
+    
+    max-width: 600px;
+    margin: 5px auto;
+    padding: 5px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.latin {
+    font-style: italic;
+}
+
+#warning {
+    background-color: #cf214c;
+}
+
+blockquote {
+    border: 5px solid black;
+    margin: 15px;
+    padding: 15px;
+}
