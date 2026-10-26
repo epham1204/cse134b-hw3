@@ -1,49 +1,65 @@
+:root {
+    --color-accent: forestgreen;
+    --color-button: mediumpurple;
+    --color-bg: floralwhite;
+    --color-text: #1f1f1f;
+    --font-body: "Times New Roman", Times, Georgia, serif;
+    --content-width: 72rem;
+    --nav-gap: 1.75rem;
+    --space: 2rem;
+}
+
+/* top header - not the dialog’s header on contact.html */
 body > header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
-    border-bottom: 2px solid forestgreen;
+    border-bottom: 2px solid var(--color-accent);
 }
 
-
+/* top left name link */
 body > header > a {
     font-weight: 700;
     text-decoration: none;
     color: inherit;
 }
 
+/* header navigation */
 nav ul {
     display: flex;
-    gap: 1.75rem;
+    gap: var(--nav-gap);
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-
+/* common footer */
 body > footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
-    border-bottom: 2px solid forestgreen;
+    border-top: 2px solid var(--color-accent);
 }
 
+/* footer navigation */
 body > footer > ul {
     display: flex;
-    gap: 1.75rem;
+    gap: var(--nav-gap);
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
+/* shared heading spacing and line height */
 h1, h2, h3 {
   line-height: 1.2;    
-  margin-top: 2rem;    
+  margin-top: var(--space);    
   margin-bottom: 0.5rem; 
 }
 
+/* custom heading size*/
 h1 {
     font-size: 2.25rem;
 }
@@ -56,41 +72,168 @@ h3 {
     font-size: 1.2rem;
 }
 
+/* body*/
 body {
-    font-family: "Times New Roman", Times, Georgia, serif;
+    font-family: var(--font-body);
     font-size: 1.25rem;
     line-height: 1.5;
-    color: #1f1f1f;
-    background: floralwhite;
+    color: var(--color-text);
+    background: var(--color-bg);
     margin: 0;
 }
 
+/* centered content */
 main {
-    max-width: 72rem;
+    max-width: var(--content-width);
     margin: 0 auto;
-    padding: 2rem 1.5rem;
+    padding: var(--space) 1.5rem;
 }
 
+/* item spacing */
 p, ul, ol {
     margin-top: 0;
     margin-bottom: 1rem;
 }
 
+/* section spacing */
 section {
-    margin-bottom: 2rem;
+    margin-bottom: var(--space);
+    display: flow-root;
 }
 
+/* button padding, border, background, and cursor */
 button {
     font: inherit;
     font-size: 1rem;
     padding: 0.6em 1.2em;
-    border: 1px solid forestgreen;
+    border: 1px solid var(--color-button);
     border-radius: 0.25em;
-    background: forestgreen;
-    color: #fff;
+    background: var(--color-button);
+    color: white;
     cursor: pointer;
 }
 
+/* form input and textarea sizing */
 input, textarea {
     font: inherit;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* form fieldset sizing */
+fieldset {
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* featured projects spacing */
+section > div {
+    display: flex;
+    gap: var(--space);
+}
+
+/* featured project sizing */
+section > div > article {
+    flex: 1;
+}
+
+/* images inside any article */
+article img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* image float and spacing */
+section > img {
+    float: left;
+    margin: 0 1.5rem 1rem 0;
+    max-width: 100%;
+    height: auto;
+}
+
+/* project grid layout */
+main > div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space);
+}
+
+/* project grid article spacing */
+main > div > article h2 {
+    margin-top: 0.5rem;
+}
+
+/* media never wider than container */
+img, video, iframe, canvas {
+    max-width: 100%;
+    height: auto;
+}
+/* responsive layout for smaller screens */
+@media (max-width: 600px) {
+
+    /* stack header items vertically */
+    body > header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    /* let nav items wrap onto multiple lines */
+    nav ul {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    /* stack footer items vertically */
+    body > footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    /* stack featured projects vertically */
+    section > div {
+        flex-direction: column;
+    }
+
+    /* stack project grid vertically */
+    main > div {
+        grid-template-columns: 1fr;
+    }
+
+    /* center section images */
+    section > img {
+        float: none;
+        display: block;
+        margin: 0 auto 1rem;
+    }
+}
+
+/* remove underline from nav links */
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* set link color everywhere */
+a {
+    color: var(--color-accent);
+}
+/* restore underline on hover for all links */
+a:hover {
+    color: var(--color-button);
+    text-decoration: underline;   /* nav links have underline removed; this restores it on hover */
+}
+
+/* focus outline for links, buttons, and inputs */
+a:focus, button:focus, input:focus, textarea:focus {
+    outline: 3px solid var(--color-button);
+    outline-offset: 2px;
+}
+
+/* add external link icon for links starting with http */
+a[href^="http"]::after {
+    content: " \2197";    /* ↗ up arrow */
+    font-size: 0.8em;
 }
