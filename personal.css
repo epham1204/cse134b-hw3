@@ -1,4 +1,4 @@
-header {
+body > header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,7 +22,7 @@ nav ul {
 }
 
 
-footer {
+body > footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,7 +30,7 @@ footer {
     border-bottom: 2px solid forestgreen;
 }
 
-footer ul {
+body > footer > ul {
     display: flex;
     gap: 1.75rem;
     list-style: none;
@@ -57,11 +57,11 @@ h3 {
 }
 
 body {
-    font-family: "Inter", "Times New Roman", serif;
+    font-family: "Times New Roman", Times, Georgia, serif;
     font-size: 1.25rem;
     line-height: 1.5;
     color: #1f1f1f;
-    background: offwhite;
+    background: floralwhite;
     margin: 0;
 }
 
