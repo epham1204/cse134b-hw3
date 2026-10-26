@@ -56,3 +56,41 @@ h3 {
     font-size: 1.2rem;
 }
 
+body {
+    font-family: "Inter", "Times New Roman", serif;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: #1f1f1f;
+    background: offwhite;
+    margin: 0;
+}
+
+main {
+    max-width: 70ch;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+p, ul, ol {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+button {
+    font: inherit;
+    font-size: 1rem;
+    padding: 0.6em 1.2em;
+    border: 1px solid forestgreen;
+    border-radius: 0.25em;
+    background: forestgreen;
+    color: #fff;
+    cursor: pointer;
+}
+
+input, textarea {
+    font: inherit;
+}
